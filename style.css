@@ -1,0 +1,62 @@
+body{
+    background-color: darkgrey;
+}
+#wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.a{
+    margin: 1em;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    float: left;
+}
+.a article{
+    position: relative;
+    margin-top:0;
+    background-color: rgba(255,255,255,0.7);
+    height: 500px;
+    padding: 1em;
+/*    transition: margin-top 1s;*/
+    animation:  downs 1s forwards;
+    
+}
+@keyframes stuiterd{
+    0%{margin-top: 0}
+    25%{margin-top:-519px}
+    38%{margin-top:-208px}
+    50%{margin-top:-519px}
+    63%{margin-top:-388px}
+    75%{margin-top:-519px}
+    88%{margin-top:-480px}
+    100%{margin-top:-519px}
+}
+@keyframes downs{
+    0%{margin-top: -519px}
+    25%{margin-top:0}
+    38%{margin-top:-200px}
+    50%{margin-top:0}
+    63%{margin-top:-100px}
+    75%{margin-top:0}
+    88%{margin-top:-50px}
+    100%{margin-top:0}
+    
+}
+.a:hover article{
+/*    margin-top:-519px;*/
+    animation: stuiterd 1s forwards;
+}
+
+footer{
+    clear: left;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+#footer img{
+    width: 100px;
+    height: 30px;
+}
